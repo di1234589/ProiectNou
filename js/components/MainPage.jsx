@@ -44,14 +44,14 @@ export default function MainPage() {
 			<div className={"container px-6 py-10 mx-auto"}>
 				<h1 className={"w-[500px] mx-auto text-center text-6xl font-bold text-pink-600"}>Aplicatia de retete</h1>
 				<p className={"w-[1000px] mx-auto text-center mt-4 text-3xl text-black-600"}>Bine ati venit in lumea bucatariei!</p>
-				<img src="a.jpg" alt="A cute cat"></img>
+			
 				<div className={"grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3"}>
 					{
 						records.map(record => (
 							<div key={record._id}
 								className={"max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow "}
 							>
-							<img src={record.imageUrl} alt={record.title} className={"mb-2 w-full rounded-lg"} />
+							
 
 								<h3 className={"mb-2 text-2xl font-bold text-red-500"}>{record.titlu}</h3>
 								<p className={"font-normal "}>{record.ingrediente}</p>
